@@ -21,7 +21,7 @@ header {
     cursor: default;
 }
 .navigation a {
-    font-size: 1.1em;
+    font-size: 30px;
     color: grey;
     text-decoration: none;
     margin-right: 40px;
@@ -59,6 +59,7 @@ header {
 .content{
     max-width: 500px;
     color: grey;
+    font-size: 20px;
 
 }
 .content h2{
@@ -72,7 +73,7 @@ header {
     font-size: 2em;
 
 }
-.btn-group a{
+ .btn-group a{
     color: white;
     text-decoration: none;
     padding: 10px 40px;
@@ -81,14 +82,111 @@ header {
     border:2px solid #7d2ae8;
     font-weight: 500;
 }
-.btn-group a:nth-child(2){
-    color: #7d2ae8;
-    background: transparent;
-    margin-left: 30px;
-    padding: 10px 30px;
-}
-.btn-group a:hover:nth-child(2){
-    color: white;
-    background: #7d2ae8
 
+#about{
+    padding: 80px 0;
+    color: black;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+.about1{
+    flex-basis: 35%;
+    font-size: larger;
+}
+.about1 img{
+    width: 100%;
+   
+}
+.about2{
+    flex-basis: 40%;
+    font-size: xx-large;
+   
+}
+#about-content{
+    padding: 0px;
+   
+
+}
+
+}
+.hero{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+
+/* horizontal align of s,e,e */
+
+.tab-links{
+    margin: 50px;
+    font-size: 80px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.skills1{
+    flex-basis: 40%;
+    font-size: 60px;
+    font-weight: 600;
+    color: black;
+}
+#skills{
+    text-align: center;
+}
+#skill-content{
+    text-align: center;
+    padding: 30px;
+    font-size: 300%;
+}
+.headings{
+    text-align: center;
+    font-size: 300%;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: black;
+    color: black;
+   
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+   align-items: center;
+   margin: 20px 0px;
+   box
+}
+   
+.input{
+   padding: 15px;
+   margin: 15px;
+   width: 30%;
+   border: none;
+   outline: none;
+      border: 2px solid black;
+}
+#msg{
+    padding: 10px;
+   margin: 40px;
+   width: 30%;
+   border: none;
+   outline: none;
+   border: 2px solid black;
+}
+#send{
+    padding: 10px;
+   margin: 40px;
+   width: 10%;
+   border: none;
+   outline: none;
+   border: 2px solid black;
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
 }
