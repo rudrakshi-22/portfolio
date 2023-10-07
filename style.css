@@ -34,7 +34,7 @@ header {
     color: #fff;
     text-decoration: none;
     padding: 8px 35px;
-    background: #7d2ae8;
+    background:#7d2ae8;
     border-radius: 15px;
     border: 5px solid #7d2ae8;
     font-weight: 500;
@@ -56,15 +56,22 @@ header {
     padding: 30px 100px;
 
 }
+
 .content{
     max-width: 500px;
     color: grey;
     font-size: 20px;
+}
+.animation{
+    animation-duration: 2s;
 
 }
 .content h2{
     font-size: 3em;
     
+}
+.output{
+    color: #7d2ae8;
 }
 .content h2 span{
     color: #7d2ae8;
@@ -103,10 +110,12 @@ header {
 .about2{
     flex-basis: 40%;
     font-size: xx-large;
+    color: #7d2ae8;
    
 }
 #about-content{
     padding: 0px;
+    color: black;
    
 
 }
@@ -135,6 +144,7 @@ header {
 }
 #skills{
     text-align: center;
+    color: #7d2ae8;
 }
 #skill-content{
     text-align: center;
@@ -144,6 +154,7 @@ header {
 .headings{
     text-align: center;
     font-size: 300%;
+    color: #7d2ae8;
 }
 #contact{
     display: flex;
@@ -159,7 +170,7 @@ header {
     box-sizing: border-box;
    align-items: center;
    margin: 20px 0px;
-   box
+   
 }
    
 .input{
@@ -179,14 +190,17 @@ header {
    border: 2px solid black;
 }
 #send{
-    padding: 10px;
-   margin: 40px;
+   padding: 8px 35px;
+   margin: 4px;
    width: 10%;
    border: none;
    outline: none;
    border: 2px solid black;
+   background: #7d2ae8;
+   border-radius: 40%;
 }
 #send:hover{
     cursor: pointer;
     box-shadow: 0 0 10px black;
+ background: white;
 }
