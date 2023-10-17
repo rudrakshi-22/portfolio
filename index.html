@@ -5,24 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f0215a5bf1.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
     <h2 class="logo">Rudrakshi.</h2>
         <nav class="navigation">
+          <nav>
             <a href="#">Home</a>
             <a href="#about">About Me</a>
             <a href="#skills">Skills</a>
-        
             <a href="#contact">Contact Me</a>
         </nav>
-        <a href="#" class="btn-talk">PORTFOLIO</a>
   </header>
   <section class="home">
     <div class="content">
        <h2>Hi<span class="output">,</span>I<span class="output1">'</span>m<span> Rudrakshi Choudhary </span></h2> 
-        <h4>Frontend Developer</h4> 
-        <p>This is my official portfolio website to shows all<br> Details and work experiences in Web development</p>
+        <span id="element"></span>
+
+        <p>This is my official portfolio website that shows all<br> Details and work experiences in Web development</p>
         
         <br>
         <div class="btn-group">
@@ -38,34 +39,74 @@
           <img src="me.jpg">
         </div>
         <div class="about2">
-          <h1>About Me</h1>
-          <p id="about-content">My name is Rudrakshi Choudhary and currently pursuing B.tech <br>degree from Ajay Kumar Garg Engineering College,Ghaziabad.<br>I have completed my 12th from Ben Hur Public School,Pilibhit<br> and scored 89%.</p>
-        
-          <div id="skills">
-            <div class="container">
-              <div class="row">
-                <div class="skills1">
+          <h2>About Me</h2>
+          <p class="about-content">My name is Rudrakshi Choudhary, and I am a dedicated student currently pursuing a B.Tech degree at Ajay Kumar Garg Engineering College in Ghaziabad.<br>Throughout my academic pursuits, I have developed a keen interest in technology and engineering, which has driven my decision to pursue a Bachelor's degree in this field.<br>I am an enthusiastic and curious individual, always eager to learn and grow. I look forward to sharing my journey, experiences, and accomplishments with you<br><br><br>Thank you for visiting my portfolio, and I hope you enjoy exploring my work and insights.</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <h1 class="skills1" id="skills">Skills</h1>
-      <p id="skill-content">Web Developer <br>UI/UX Designer<br> Management<br> Decision making <br></p>
-        
+
+      <div id="skills">
+        <div class="contain">
+          <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+              <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Web Designer</h2>
+                <p>Create websites that adapt to various screen sizes and devices, ensuring a seamless user experience. Prioritize user experience (UX) and user interface (UI) design for intuitive navigation and engagement.</p>
+               <a href="#">Learn more</a>
+              </div>
+              <div>
+                <i class="fa-sharp fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Translate design concepts into functional HTML, CSS, and JavaScript code. Build websites using popular </p>
+                <a href="#">Learn more</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-list-check"></i>
+                <h2>Management Skills</h2>
+                <p>Team Leadership,effective Communication, Project planning,Time Management,Team development,Change Management,etc.</p>
+                <a href="#">Learn more</a>
     </div>
   </div>
-  <div id="contact"></div>
-  <section id="Contact">
-    <h1 class="headings">Contact</h1>
-    <form action="" class="form">
-      <input type="text" name="name" class="input" placeholder="Enter Your Name">
-      <input type="email" name="email" class="input" placeholder="Enter Your Email">
-      <br><br><br><br>
-      <textarea name="msg" id="msg" cols="20" rows="10"></textarea>
-      <input type="submit" value="SEND" id="send">
-    </form>
+  <div id="contact">
+  <div class="contact-left">
+    <h1 class="headings">Contact Me</h1>
+    <p><i class="fa-solid fa-paper-plane"></i>rudrakshi22164067@akgec.ac.in</p>
+    <p><i class="fa-solid fa-phone"></i>9761011923</p>
+    <div class="social-icons">
+      <a href="https://www.bing.com/ck/a?!&&p=3bed05468002c1e3JmltdHM9MTY5NzMyODAwMCZpZ3VpZD0xMTY5NDJlYS02MjBiLTYyMTAtMDk2ZC01MTY3NjNkZTYzMDgmaW5zaWQ9NTE5Ng&ptn=3&hsh=3&fclid=116942ea-620b-6210-096d-516763de6308&psq=facebook+log+in&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tLw&ntb=1" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://instagram.com/ruhiiiic?igshid=OGQ5ZDc2ODk2ZA=="  target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.twitter.com/"  target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/rudrakshi-choudhary-0a9b31291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"  target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </div>
+  <div class="contact-right">
+    <form>
+      <input type="text" name="name" class="input" placeholder="Enter Your Name" required>
+      <input type="email" name="email" class="input" placeholder="Enter Your Email" required>
+      <br><br><br>
+      <textarea name="message" rows="10" placeholder="Enter your message"></textarea>
+    </div>
+    <button type="submit" class="btn2">Submit</button>
+    </form> 
+  </div>
+  
+  </div>
+      </div>
+  
   </section>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Frontend Developer','Web Designing'],
+    typeSpeed: 50,
+    });
+  </script>
+  
+  
 </body>
 </html>
